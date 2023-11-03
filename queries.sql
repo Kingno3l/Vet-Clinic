@@ -22,6 +22,8 @@ UPDATE animals
 SET species = 'digimon'
 WHERE name LIKE '%mon';
 SELECT * FROM animals;
+COMMIT;
+SELECT species from animals;
 
 BEGIN;
 UPDATE animals
@@ -32,8 +34,9 @@ SELECT * FROM animals;
 
 BEGIN;
 DELETE FROM animals;
-ROLLBACK;
 SELECT * FROM animals;
+ROLLBACK;
+SELECT COUNT(*) FROM ANIMALS;
 
 BEGIN;
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
