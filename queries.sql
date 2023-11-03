@@ -23,6 +23,7 @@ SET species = 'digimon'
 WHERE name LIKE '%mon';
 SELECT * FROM animals;
 COMMIT;
+SELECT species from animals;
 
 BEGIN;
 UPDATE animals
