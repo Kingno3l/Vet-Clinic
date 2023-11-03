@@ -36,6 +36,8 @@ BEGIN;
 DELETE FROM animals;
 SELECT * FROM animals;
 ROLLBACK;
+SELECT COUNT(*) FROM ANIMALS;
+
 
 BEGIN;
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
