@@ -16,6 +16,7 @@ UPDATE animals
 SET species = 'unspecified';
 SELECT * FROM animals;
 ROLLBACK;
+SELECT * FROM animals;
 
 BEGIN;
 UPDATE animals
@@ -30,7 +31,9 @@ UPDATE animals
 SET species = 'pokemon'
 WHERE species IS null;
 SELECT * FROM animals;
+SELECT * FROM animals;
 COMMIT;
+
 
 BEGIN;
 DELETE FROM animals;
