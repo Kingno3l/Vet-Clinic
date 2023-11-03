@@ -31,9 +31,8 @@ UPDATE animals
 SET species = 'pokemon'
 WHERE species IS null;
 SELECT * FROM animals;
-SELECT * FROM animals;
 COMMIT;
-
+SELECT * FROM animals;
 
 BEGIN;
 DELETE FROM animals;
